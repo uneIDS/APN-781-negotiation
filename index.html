@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,63 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="APN 781 Interactive" startnode="1" creator="Twine" creator-version="2.3.7" ifid="6E24DD91-C82E-493F-A498-AFD888EEF503" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="412,189" size="100,100">In a successful negotiation, it’s key to find out the other party’s position.
+<tw-storydata name="APN 781 Interactive" startnode="1" creator="Twine" creator-version="2.3.7" ifid="6E24DD91-C82E-493F-A498-AFD888EEF503" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+
+  background-image: url("https://uneids.github.io/APN-781-negotiation/startup-593344_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+background-attachment: fixed;
+    display: flex;
+  align-items: center;
+  
+  
+
+}
+tw-story[tags="Ending"] {
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/13/22/53/puzzle-3223941_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+tw-passage {
+  color: #2B3856;
+  font-family: "Arial";
+  background-color: rgba(240, 240, 240, .8);
+  padding: 1.5em; 
+  
+
+}
+tw-sidebar {
+display: none;
+}
+h2 {
+font-size: 1.5em;
+}
+h3 {
+font-size: 1.2em;
+margin-top: 1.5ex;
+}
+li {
+margin-bottom: 1.1em;
+}
+.image-right {
+float: right;
+padding-left: 20px;
+  width: 400px;
+  margin-left: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.left-column {
+margin-right: 450px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #2B3856;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+ </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="412,189" size="100,100">In a successful negotiation, it’s key to find out the other party’s position.
 
 Your job is to find out as much meaningful information as possible.
 
@@ -32,33 +89,38 @@ You:
  
 [[Since we have had a good working relationship thus far, we might be able to extend the contract for 5 years, if we can agree on terms.|Extend]]
 
-[[So we are going to discuss a new contract and a new contract term; what is your best offer?|General 2]]</tw-passagedata><tw-passagedata pid="3" name="General" tags="" position="532,339" size="100,100">This is too general. Let&#39;s not waste time and get specific!</tw-passagedata><tw-passagedata pid="4" name="Extend" tags="" position="199,479" size="100,100">Marie: We are excited to hear this! We like keeping good relationships, and your hospital has been a reliable partner. We are looking for a 5-yr contract with extensions.
+[[So we are going to discuss a new contract and a new contract term; what is your best offer?|General 2]]</tw-passagedata><tw-passagedata pid="3" name="General" tags="" position="532,339" size="100,100">[[This is too general. Let&#39;s not waste time and get specific!|Intro]]</tw-passagedata><tw-passagedata pid="4" name="Extend" tags="" position="199,479" size="100,100">Marie: We are excited to hear this! We like keeping good relationships, and your hospital has been a reliable partner. We are looking for a 5-yr contract with extensions.
 
 You:
 
 [[I wonder if you might consider giving us favorable pricing if we, say, expand our purchases.|Expand purchases]]
-[[Do you offer tiered pricing if we purchase a greater variety of products?|Tiered]]</tw-passagedata><tw-passagedata pid="5" name="General 2" tags="" position="349,479" size="100,100">This is too general. Let&#39;s not waste time and get specific!</tw-passagedata><tw-passagedata pid="6" name="Expand purchases" tags="" position="124,629" size="100,100">Marie: Well, we are willing to adjust prices if the contract can be 5 years + 5-year extension. 
+
+[[Do you offer tiered pricing if we purchase a greater variety of products?|Tiered]]</tw-passagedata><tw-passagedata pid="5" name="General 2" tags="" position="349,479" size="100,100">[[This is too general. Let&#39;s not waste time and get specific!|happy]]</tw-passagedata><tw-passagedata pid="6" name="Expand purchases" tags="" position="124,629" size="100,100">Marie: Well, we are willing to adjust prices if the contract can be 5 years + 5-year extension. 
 
 You:
 
 [[We would love to keep this contract with a reliable company; we are just really struggling with continuing the same distributor fees. They are very expensive; how do we make this work? Can we bypass the distributor?|expensive]]
+
 [[The distribution fee is outrageous. We know that other hospitals only pay 4%. What is the best deal you can work out with us? We need a significant discount, or we simply can’t afford another contract, to be honest.|expensive forceful]]</tw-passagedata><tw-passagedata pid="7" name="Tiered" tags="" position="274,629" size="100,100">Marie: Well, we are willing to adjust prices if the contract can be 5 years + 5-year extension. 
 
 You:
 
 [[We would love to keep this contract with a reliable company; we are just really struggling with continuing the same distributor fees. They are very expensive; how do we make this work? Can we bypass the distributor?|expensive]]
+
 [[The distribution fee is outrageous. We know that other hospitals only pay 4%. What is the best deal you can work out with us? We need a significant discount, or we simply can’t afford another contract, to be honest.|expensive forceful]]</tw-passagedata><tw-passagedata pid="8" name="expensive" tags="" position="49,779" size="100,100">Marie: We will try to renegotiate the fees with the distributors. They might be willing to reduce their fees in order to continue with a contract. 
 
 
 You:
 
 [[We also struggle a little with selecting the right products. Sometimes our most expensive items expire unused. It’s easy to see why the management is not thrilled with us spending this sort of money.|expire unused]]
+
 [[It would help us immensely if we had a dedicated nutrition support educator with a depth of knowledge about your products. How do we go about getting one?|nutrition support]]</tw-passagedata><tw-passagedata pid="9" name="expensive forceful" tags="" position="199,779" size="100,100">Marie: We will try to renegotiate the fees with the distributors. They might be willing to reduce their fees in order to continue with a contract. 
 
 
 You:
 
 [[We also struggle a little with selecting the right products. Sometimes our most expensive items expire unused. It’s easy to see why the management is not thrilled with us spending this sort of money.|expire unused]]
+
 [[It would help us immensely if we had a dedicated nutrition support educator with a depth of knowledge about your products. How do we go about getting one?|nutrition support]]</tw-passagedata><tw-passagedata pid="10" name="expire unused" tags="" position="0,929" size="100,100">Marie: We are able to offer a nutrition support educator for 10 hours/month – this is our best offer.
 
 (Time to bring up the ugly stuff…)
@@ -66,6 +128,7 @@ You:
 You:
 
 [[We have had some issues in the past with some orders missing products. What can we do differently to ensure this does NOT happen again?| missing orders nice]]
+
 [[It has come to our attention that products don’t always arrive as ordered. This has to be changed if we are to continue purchasing products.|missing orders forceful]]</tw-passagedata><tw-passagedata pid="11" name="nutrition support" tags="" position="124,929" size="100,100">Marie: We are able to offer a nutrition support educator for 10 hours/month – this is our best offer.
 
 (Time to bring up the ugly stuff…)
@@ -73,6 +136,7 @@ You:
 You:
 
 [[We have had some issues in the past with some orders missing products. What can we do differently to ensure this does NOT happen again?| missing orders nice]]
+
 [[It has come to our attention that products don’t always arrive as ordered. This has to be changed if we are to continue purchasing products.|missing orders forceful]]</tw-passagedata><tw-passagedata pid="12" name=" missing orders nice" tags="" position="0,1079" size="100,100">Marie: Right... we have noticed that the deliveries were not being put in on time. The cutoff time for orders is by noon the day before delivery. Oftentimes, they are entered in well after 5 pm. We understand that we all have our processes, but this needs to be modified in order to receive the product on time.
 
 (Sounds like this one is on you... 
@@ -81,22 +145,28 @@ You still have to address coffee products!)
 You:
 
 [[We might have to discontinue coffee products. After distributor fees, it’s like going to Starbucks! We will just have to make do…| starbucks]]
+
 [[The coffee products are very popular, but it adds up quickly. How are we supposed to keep buying them when the price is so high? We simply can’t afford the current price.| coffee positive]]
 
-</tw-passagedata><tw-passagedata pid="13" name="missing orders forceful" tags="" position="120,1079" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="14" name=" starbucks" tags="" position="0,1229" size="100,100">Marie: We could offer a 20% reduction in price for all coffee and coffee products. 
+</tw-passagedata><tw-passagedata pid="13" name="missing orders forceful" tags="" position="120,1079" size="100,100">[[Some sort of feedback needed|starbucks]]</tw-passagedata><tw-passagedata pid="14" name=" starbucks" tags="" position="0,1229" size="100,100">Marie: We could offer a 20% reduction in price for all coffee and coffee products. 
 
 [[Summary]]</tw-passagedata><tw-passagedata pid="15" name=" coffee positive" tags="" position="120,1229" size="100,100">Marie: We could offer a 20% reduction in price for all coffee and coffee products. 
 
 [[Summary]]</tw-passagedata><tw-passagedata pid="16" name="Summary" tags="" position="0,1379" size="100,100">The Nestle District Manager, Marie, is very happy with this account.  Of course, there are some issues that could be improved, but overall, this account makes money and the company wants to keep the business.  Their goal is to be awarded another 5-year contract + potential to extend if possible.  
 Here are some facts:
 ●	This is a three-million-dollar per year contract.
-●	Your boss and company would prefer to grow this business.  
+
+●	Your boss and company would prefer to grow this business. 
+
 ●	You like not having to deal with ordering and delivery, but understand that adds quite a bit of cost to the products.  
+
 ●	The distribution company is aware that they are making a killer deal on this.  They are willing to reduce their fees by at most 30% in order to continue with a contract.
-●	You are aware this account may feel a bit left out - their sales rep has been taken onto other accounts. You are willing to offer a new sales rep.  You are also willing to offer a nutrition support educator for 10 hours/month.
-●	You are willing to adjust prices if the contract can be 5 years + 5 year extension.  You would offer a 20% reduction in price for all coffee and coffee products.  
-●	You know products have been shorted. Mostly, they were shorted because the deliveries were not being put in on time. The cutoff time for orders are by noon the day before delivery. Oftentimes, they are entered in well after 5 pm. This needs to be modified in order to receive the product on time.
-</tw-passagedata></tw-storydata>
+
+●	You are aware this account may feel a bit left out - their sales rep has been taken onto other accounts. You are willing to offer a new sales rep. You are also willing to offer a nutrition support educator for 10 hours/month.
+
+●	You are willing to adjust prices if the contract can be 5 years + 5 year extension. You would offer a 20% reduction in price for all coffee and coffee products.
+
+●	You know products have been shorted. Mostly, they were shorted because the deliveries were not being put in on time. The cutoff time for orders are by noon the day before delivery. Oftentimes, they are entered in well after 5 pm. This needs to be modified in order to receive the product on time.</tw-passagedata><tw-passagedata pid="17" name="starbucks" tags="" position="240,1229" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="happy" tags="" position="394,629" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.

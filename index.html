@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +67,40 @@ margin-right: 450px;
   margin-bottom: 20px;
   background-color: white;
 }
- </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="412,189" size="100,100">In a successful negotiation, it’s key to find out the other party’s position.
+ .marie {
+  text-align: left;
+  width: 80%;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 1% 2% 1% 2%;
+  margin: 2% auto 2% 4%;
+  background-color: #86b1be;
+  }
+
+.you {
+  text-align: left;
+  width: 80%;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 1% 2% 1% 2%;
+  margin: 2% 4% 2% auto;
+  background-color: #ffaf83;
+  }
+.choice {
+  text-align: left;
+  width: 80%;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 1% 2% 1% 2%;
+margin: 2% 4% 2% auto;
+  background-color: #ffffff;
+  }
+.choices {
+  background-color: #333333;
+  padding: 4% 0 4% 0;
+	border-top: 2px solid #000000;
+  width: 100%;
+  }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="412,189" size="100,100">In a successful negotiation, it’s key to find out the other party’s position.
 
 Your job is to find out as much meaningful information as possible.
 
@@ -76,26 +108,20 @@ Your job is to find out as much meaningful information as possible.
 
 [You meet Marie, the Nestle District Manager, for the first time on this call. You have heard her name mentioned before. You only know a little bit about her. 
 
-[You: Hello, Marie! Nice to meet you. I am looking forward to a continued relationship with you. 
+[&lt;div class=&quot;you&quot;&gt;Hello, Marie! Nice to meet you. I am looking forward to a continued relationship with you. &lt;/div&gt;
 
 (link: &quot;Next &gt;&gt;&quot;)+(transition: &quot;dissolve&quot;)+(transition-time: 2s)
 
-[ [[It sounds like you are happy with this account. (Why would they be here if they weren’t?)|Happy]]
+[ &lt;div class=&quot;choices&quot;&gt;&lt;div class=&quot;choice&quot;&gt;[[It sounds like you are happy with this account. (Why would they be here if they weren’t?)|Happy]]&lt;/div&gt;
+&lt;div class=&quot;choice&quot;&gt;[[How are things going for our account?|General]]&lt;/div&gt;&lt;/div&gt; ]]]
+</tw-passagedata><tw-passagedata pid="2" name="Happy" tags="" position="274,329" size="100,100">&lt;div class=&quot;marie&quot;&gt;There are some issues to be improved, but overall, yes, we are happy to be partners.&lt;/div&gt;
 
-[[How are things going for our account?|General]] ]]]
-</tw-passagedata><tw-passagedata pid="2" name="Happy" tags="" position="274,329" size="100,100">Marie: There are some issues to be improved, but overall, yes, we are happy to be partners.
+&lt;div class=&quot;choices&quot;&gt;&lt;div class=&quot;choice&quot;&gt;[[Since we have had a good working relationship thus far, we might be able to extend the contract for 5 years, if we can agree on terms.|Extend]]&lt;/div&gt;
+&lt;div class=&quot;choice&quot;&gt;[[So we are going to discuss a new contract and a new contract term; what is your best offer?|General 2]]
+&lt;/div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="General" tags="" position="532,339" size="100,100">[[This is too general. Let&#39;s not waste time and get specific!|Intro]]</tw-passagedata><tw-passagedata pid="4" name="Extend" tags="" position="199,479" size="100,100">&lt;div class=&quot;marie&quot;&gt;We are excited to hear this! We like keeping good relationships, and your hospital has been a reliable partner. We are looking for a 5-yr contract with extensions.&lt;/div&gt;
 
-You:
- 
-[[Since we have had a good working relationship thus far, we might be able to extend the contract for 5 years, if we can agree on terms.|Extend]]
-
-[[So we are going to discuss a new contract and a new contract term; what is your best offer?|General 2]]</tw-passagedata><tw-passagedata pid="3" name="General" tags="" position="532,339" size="100,100">[[This is too general. Let&#39;s not waste time and get specific!|Intro]]</tw-passagedata><tw-passagedata pid="4" name="Extend" tags="" position="199,479" size="100,100">Marie: We are excited to hear this! We like keeping good relationships, and your hospital has been a reliable partner. We are looking for a 5-yr contract with extensions.
-
-You:
-
-[[I wonder if you might consider giving us favorable pricing if we, say, expand our purchases.|Expand purchases]]
-
-[[Do you offer tiered pricing if we purchase a greater variety of products?|Tiered]]</tw-passagedata><tw-passagedata pid="5" name="General 2" tags="" position="349,479" size="100,100">[[This is too general. Let&#39;s not waste time and get specific!|Happy]]</tw-passagedata><tw-passagedata pid="6" name="Expand purchases" tags="" position="124,629" size="100,100">Marie: Well, we are willing to adjust prices if the contract can be 5 years + 5-year extension. 
+&lt;div class=&quot;choices&quot;&gt;&lt;div class=&quot;choice&quot;&gt;[[I wonder if you might consider giving us favorable pricing if we, say, expand our purchases.|Expand purchases]]&lt;/div&gt;
+&lt;div class=&quot;choice&quot;&gt;[[Do you offer tiered pricing if we purchase a greater variety of products?|Tiered]]&lt;div&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="General 2" tags="" position="349,479" size="100,100">[[This is too general. Let&#39;s not waste time and get specific!|Happy]]</tw-passagedata><tw-passagedata pid="6" name="Expand purchases" tags="" position="124,629" size="100,100">Marie: Well, we are willing to adjust prices if the contract can be 5 years + 5-year extension. 
 
 You:
 
